@@ -1,0 +1,16 @@
+[package]
+name = "rust_call_cpp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[dependencies]
+libc = "0.2.0"
+
+[build-dependencies]
+git2 = "0.13" # A crate for working with Git repositories
